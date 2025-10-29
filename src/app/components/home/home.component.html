@@ -1,0 +1,301 @@
+<div style="font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial; color:#0B0F1A; line-height:1.6;">
+  <header class="topbar" style="background:linear-gradient(90deg,#0B0F1A,#0B3D91); color:#f8fafc; padding:0 24px; height:100px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:10;">
+    <div class="brand-wrap" style="display:flex; align-items:center; gap:16px; width:100%; max-width:1100px; margin:0 auto; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:24px;">
+        <span class="brand" style="font-weight:900; letter-spacing:1px; font-size:20px;">TOP CNC</span>
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true">
+        <label for="nav-toggle" class="burger" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span></label>
+        <nav id="primary-nav" class="nav" style="display:flex; gap:16px; align-items:center;">
+          <a href="#hero" (click)="$event.preventDefault(); scrollTo('hero')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Top CNC For Sale</a>
+          <a href="#features" (click)="$event.preventDefault(); scrollTo('features')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Key Advantages</a>
+          <a href="#specs" (click)="$event.preventDefault(); scrollTo('specs')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Technical Specifications</a>
+          <a href="#why" (click)="$event.preventDefault(); scrollTo('why')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Why This Machine</a>
+          <a href="#applications" (click)="$event.preventDefault(); scrollTo('applications')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Applications</a>
+          <a href="#about" (click)="$event.preventDefault(); scrollTo('about')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">About Top CNC</a>
+          <a href="#plans" (click)="$event.preventDefault(); scrollTo('plans')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Purchase Options</a>
+          <a href="#testimonials" (click)="$event.preventDefault(); scrollTo('testimonials')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Customer Proof</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" style="background:linear-gradient(180deg,#F1F5F9,#ffffff); padding:56px 16px;">
+    <mat-card style="max-width:1100px; margin:0 auto; padding:32px; border-radius:16px; box-shadow:0 10px 30px rgba(2,6,23,0.08);">
+      <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:center; justify-content:space-between;">
+        <div style="flex:1 1 460px;">
+          <h1 style="margin:0 0 12px 0; font-size:40px; line-height:1.2; color:#0B0F1A;">Precision CNC—Ready to Go to Work</h1>
+          <p style="margin:0 0 16px 0; font-size:16px; color:#334155;">Sell your Top CNC machine with the performance buyers want: microns-level accuracy, high-speed throughput, and proven reliability.</p>
+          <ul style="margin:0 0 20px 18px; color:#334155;">
+            <li>±5 µm positioning accuracy for tight-tolerance parts</li>
+            <li>15,000 rpm spindle with 18 kW for fast metal removal</li>
+            <li>24-tool automatic changer to keep jobs moving</li>
+          </ul>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button mat-raised-button color="primary" style="background:#0B3D91; color:#FFFFFF; padding:0 20px; height:44px; border-radius:8px; font-weight:700;" (click)="scrollTo('plans')">Request a Quote</button>
+            <button mat-stroked-button style="height:44px; border-radius:8px; border-color:#cbd5e1; color:#0B0F1A;" (click)="scrollTo('specs')">See the Full Specs</button>
+          </div>
+          <p style="margin:12px 0 0 0; font-size:12px; color:#64748b;">Fast response—no obligation, quote in 24 hours</p>
+        </div>
+      </div>
+    </mat-card>
+  </section>
+
+  <section id="features" style="padding:48px 16px; background:#ffffff;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0B0F1A;">Key Advantages</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Proven precision and rigidity for tight-tolerance work. High spindle speed and fast rapids for shorter cycle times. Automation-ready features and buyer-proof details.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;"><mat-icon style="color:#0B3D91;">straighten</mat-icon><mat-card-title style="font-size:18px; color:#0B0F1A;">Tight Tolerances</mat-card-title></div>
+          <mat-card-content style="color:#334155;">Preloaded ball screws, linear guides, and thermal stability deliver ±5 µm accuracy and ±3 µm repeatability on real parts.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;"><mat-icon style="color:#0B3D91;">speed</mat-icon><mat-card-title style="font-size:18px; color:#0B0F1A;">High Throughput</mat-card-title></div>
+          <mat-card-content style="color:#334155;">15,000 rpm spindle, 36 m/min rapids, and rigid cast-iron construction cut cycle times without chatter.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;"><mat-icon style="color:#0B3D91;">build_circle</mat-icon><mat-card-title style="font-size:18px; color:#0B0F1A;">Automation-Ready</mat-card-title></div>
+          <mat-card-content style="color:#334155;">24-tool ATC with tool length measurement reduces changeover. Optional probing accelerates setups.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;"><mat-icon style="color:#0B3D91;">memory</mat-icon><mat-card-title style="font-size:18px; color:#0B0F1A;">Smart Control</mat-card-title></div>
+          <mat-card-content style="color:#334155;">Intuitive touchscreen HMI, Ethernet/USB file transfer, and standard G-code compatibility streamline programming.</mat-card-content>
+        </mat-card>
+      </div>
+      <p style="margin:18px 0 0 0; color:#64748b; font-size:13px;">Ribbed cast-iron base and column, closed-loop servo drives on all axes, flood and mist coolant, and full enclosure with safety interlocks.</p>
+    </div>
+  </section>
+
+  <section id="specs" style="padding:48px 16px; background:#F8FAFC;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0B0F1A;">Technical Specifications</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Buyer-grade specs to speed evaluation and reduce back-and-forth.</p>
+      <mat-card style="border-radius:12px; padding:0; overflow:hidden; border:1px solid #e2e8f0;">
+        <div style="padding:0 20px;">
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Axis Travel (X/Y/Z)</div><div style="color:#334155;">1000 × 500 × 500 mm</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Table Size / Max Load</div><div style="color:#334155;">1100 × 550 mm / 800 kg</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Spindle</div><div style="color:#334155;">15,000 rpm, 18 kW, BT40 taper</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Feedrates (Rapid / Cut)</div><div style="color:#334155;">36 m/min rapid, up to 10 m/min cutting (material dependent)</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Tool Changer</div><div style="color:#334155;">24-tool servo ATC with 2.5 s tool-to-tool</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Positioning Accuracy / Repeatability</div><div style="color:#334155;">±5 µm / ±3 µm</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Controller</div><div style="color:#334155;">Industrial CNC control, standard G-code; compatible with common CAM post-processors</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Coolant & Chip Management</div><div style="color:#334155;">Flood and mist coolant, programmable air blast, side chip auger</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Electrical</div><div style="color:#334155;">380–415 V, 3‑phase, 32 A</div>
+          </div>
+          <mat-divider></mat-divider>
+          <div style="display:flex; justify-content:space-between; padding:16px 0; gap:16px;">
+            <div style="font-weight:600; color:#0B0F1A;">Machine Footprint</div><div style="color:#334155;">2.8 m × 2.2 m × 2.7 m (L×W×H)</div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </section>
+
+  <section id="why" style="padding:48px 16px; background:#ffffff;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0B0F1A;">Why This Machine</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Differentiate with ROI, reliability, and risk reduction for the buyer.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card class="feature-card" style="flex:1 1 300px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Proven Part Quality</mat-card-title>
+          <mat-card-content style="color:#334155;">Holds microns on critical features with stable thermal behavior and rigid construction.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 300px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Faster Payback</mat-card-title>
+          <mat-card-content style="color:#334155;">High spindle speed and fast rapids shorten cycle times, boosting throughput and margin.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 300px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Lower Setup Time</mat-card-title>
+          <mat-card-content style="color:#334155;">24-tool ATC and optional probing slash changeover, keeping the spindle cutting.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 300px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Operator-Friendly</mat-card-title>
+          <mat-card-content style="color:#334155;">Straightforward HMI, easy program transfer, and clear maintenance points reduce training time.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 300px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Serviceable & Supported</mat-card-title>
+          <mat-card-content style="color:#334155;">Standard components, accessible panels, and comprehensive manuals simplify upkeep.</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="applications" style="padding:48px 16px; background:#F8FAFC;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0B0F1A;">Applications</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Real production contexts where the machine excels.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:flex-start;">
+        <mat-card style="flex:1 1 320px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Industries</mat-card-title>
+          <mat-card-content style="color:#334155;">
+            <ul style="margin:8px 0 0 18px;">
+              <li>Aerospace brackets and housings</li>
+              <li>Automotive fixtures and molds</li>
+              <li>Medical components and tooling</li>
+              <li>General job-shop production and prototyping</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+        <mat-card style="flex:1 1 320px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Materials</mat-card-title>
+          <mat-card-content style="color:#334155;">
+            <ul style="margin:8px 0 0 18px;">
+              <li>Aluminum 6xxx/7xxx</li>
+              <li>Mild and stainless steels</li>
+              <li>Engineering plastics (POM, PEEK)</li>
+              <li>Brass and copper</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+        <mat-card style="flex:1 1 320px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Sample Parts</mat-card-title>
+          <mat-card-content style="color:#334155;">
+            <ul style="margin:8px 0 0 18px;">
+              <li><strong>Precision Housings:</strong> Stable wall thickness and surface finish with high-speed finishing passes</li>
+              <li><strong>Workholding Fixtures:</strong> Rigid cuts in tool steel with consistent hole location</li>
+              <li><strong>Mold Inserts:</strong> Clean cavity detail and repeatable surface finish with balanced tooling</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding:48px 16px; background:#ffffff;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0B0F1A;">About Top CNC</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Top CNC focuses on dependable precision machinery that's easy to run and maintain. Our machines power job shops, OEMs, and R&amp;D labs that demand tight tolerances and predictable uptime.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card class="feature-card" style="flex:1 1 320px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-content style="color:#334155;">Engineered for rigidity: ribbed cast-iron frames and preloaded ball screws</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 320px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-content style="color:#334155;">Straightforward parts availability and responsive technical support</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 320px; min-width:260px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-content style="color:#334155;">Clear documentation and maintenance schedules for long service life</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans" style="padding:48px 16px; background:#F8FAFC;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0B0F1A;">Purchase Options</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Choose how you want to buy: base machine, machine with installation, or a turnkey production package. Exact pricing provided via fast quotes.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card style="flex:1 1 300px; min-width:280px; border:1px solid #e2e8f0; border-radius:14px; padding:20px; background:#ffffff;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Machine Only</mat-card-title>
+          <div style="margin:6px 0 14px 0; font-size:16px; color:#334155;">Quote in 24 hours</div>
+          <ul style="padding-left:18px; margin:0 0 16px 0; color:#334155;">
+            <li>As‑is sale with current configuration</li>
+            <li>Operator and maintenance manuals included</li>
+            <li>Remote commissioning assistance</li>
+          </ul>
+          <button mat-stroked-button style="width:100%; border-color:#cbd5e1; color:#0B0F1A; height:42px;">Request Quote</button>
+        </mat-card>
+
+        <mat-card style="flex:1 1 300px; min-width:280px; border:2px solid #0B0F1A; border-radius:16px; padding:22px; background:#0B0F1A; color:#f8fafc; transform:translateY(-4px); box-shadow:0 12px 30px rgba(2,6,23,0.15);">
+          <mat-card-title style="font-size:18px; color:#f8fafc;">Machine + Installation</mat-card-title>
+          <div style="margin:6px 0 14px 0; font-size:16px; color:#cbd5e1;">On‑site install, get a quote</div>
+          <ul style="padding-left:18px; margin:0 0 16px 0; color:#e2e8f0;">
+            <li>Professional installation and leveling</li>
+            <li>Operator training (1 day)</li>
+            <li>12‑month extended warranty</li>
+          </ul>
+          <button mat-raised-button color="accent" style="width:100%; height:44px; background:#FF7A00; color:#0B0F1A; font-weight:800;">Get Installation Quote</button>
+        </mat-card>
+
+        <mat-card style="flex:1 1 300px; min-width:280px; border:1px solid #e2e8f0; border-radius:14px; padding:20px; background:#ffffff;">
+          <mat-card-title style="font-size:18px; color:#0B0F1A;">Turnkey Production Package</mat-card-title>
+          <div style="margin:6px 0 14px 0; font-size:16px; color:#334155;">Configured for your parts</div>
+          <ul style="padding-left:18px; margin:0 0 16px 0; color:#334155;">
+            <li>Installation, training, and production run-off</li>
+            <li>Starter tooling, workholding, and coolant kit</li>
+            <li>24‑month priority support</li>
+          </ul>
+          <button mat-stroked-button style="width:100%; border-color:#cbd5e1; color:#0B0F1A; height:42px;">Build My Package</button>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" style="padding:48px 16px; background:#ffffff;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0B0F1A;">Customer Proof</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">What buyers and operators say about this machine.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card style="flex:1 1 320px; min-width:280px; border:1px solid #e2e8f0; border-radius:12px; padding:18px;">
+          <p style="margin:0 0 4px 0; color:#0B0F1A; font-weight:700;">Lena Ortiz</p>
+          <p style="margin:0 0 8px 0; color:#64748b; font-size:12px;">Operations Manager, Apex Precision</p>
+          <p style="margin:0; color:#334155;">“Cycle time dropped 22% on aluminum housings. The machine holds tolerance without babysitting.”</p>
+        </mat-card>
+        <mat-card style="flex:1 1 320px; min-width:280px; border:1px solid #e2e8f0; border-radius:12px; padding:18px;">
+          <p style="margin:0 0 4px 0; color:#0B0F1A; font-weight:700;">Marcus Reed</p>
+          <p style="margin:0 0 8px 0; color:#64748b; font-size:12px;">Owner, Reed Machine Works</p>
+          <p style="margin:0; color:#334155;">“Setup is quick with the ATC and probing. We were cutting production parts on day two.”</p>
+        </mat-card>
+        <mat-card style="flex:1 1 320px; min-width:280px; border:1px solid #e2e8f0; border-radius:12px; padding:18px;">
+          <p style="margin:0 0 4px 0; color:#0B0F1A; font-weight:700;">Harini V.</p>
+          <p style="margin:0 0 8px 0; color:#64748b; font-size:12px;">Manufacturing Engineer, Vector Labs</p>
+          <p style="margin:0; color:#334155;">“Smooth finish right off the machine and consistent repeatability across shifts.”</p>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0B0F1A; color:#e2e8f0;">
+    <div style="max-width:1100px; margin:0 auto; padding:28px 16px; display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; justify-content:space-between;">
+      <div style="min-width:220px;">
+        <div style="font-weight:900; margin-bottom:6px; letter-spacing:1px;">TOP CNC</div>
+        <div style="font-size:13px; color:#94a3b8;">Top CNC builds reliable, precise machines designed for real production. This page helps you evaluate and purchase confidently with clear specs and support.</div>
+      </div>
+      <div style="display:flex; gap:32px; flex-wrap:wrap;">
+        <div>
+          <div style="font-weight:700; margin-bottom:8px; color:#f1f5f9;">Product</div>
+          <a href="#features" (click)="$event.preventDefault(); scrollTo('features')" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Features</a>
+          <a href="#plans" (click)="$event.preventDefault(); scrollTo('plans')" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Pricing/Plans</a>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1;">Docs</a>
+        </div>
+        <div>
+          <div style="font-weight:700; margin-bottom:8px; color:#f1f5f9;">Company</div>
+          <a href="#about" (click)="$event.preventDefault(); scrollTo('about')" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">About</a>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Careers</a>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1;">Contact</a>
+        </div>
+        <div>
+          <div style="font-weight:700; margin-bottom:8px; color:#f1f5f9;">Legal</div>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Privacy</a>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1;">Terms</a>
+        </div>
+      </div>
+    </div>
+    <mat-divider style="border-top-color:#1f2937;"></mat-divider>
+    <div style="max-width:1100px; margin:0 auto; padding:14px 16px; font-size:12px; color:#94a3b8;">© 2025 top-cnc-advantage. All rights reserved.</div>
+  </footer>
+</div>
