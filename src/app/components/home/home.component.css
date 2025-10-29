@@ -1,0 +1,7 @@
+mat-card{max-width:100%;}
+.feature-card{transition:transform 160ms ease, box-shadow 160ms ease;will-change:transform}
+.feature-card:hover,.feature-card:focus-within{transform:translateY(-2px) scale(1.01);box-shadow:0 10px 26px rgba(2,6,23,0.16);outline:none}
+.topbar .burger{display:none;cursor:pointer;height:28px;width:32px;align-items:center;justify-content:center;margin-left:8px}
+.topbar .burger span{display:block;height:2px;background:#f8fafc;margin:5px 0;width:22px;border-radius:2px}
+.topbar .nav-toggle{display:none}
+@media (max-width:900px){.topbar .burger{display:flex}.topbar .nav{display:none;position:absolute;left:0;right:0;top:100px;background:#0B0F1A;padding:12px 16px;flex-direction:column;gap:12px;border-top:1px solid rgba(255,255,255,0.08)}.topbar .nav-toggle:checked+.burger+.nav{display:flex}}
